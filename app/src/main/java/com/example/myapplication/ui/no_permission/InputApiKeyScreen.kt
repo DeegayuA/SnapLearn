@@ -45,7 +45,7 @@ fun InputApiKeyScreen(
             Spacer(modifier = Modifier.height(16.dp))
             Button(onClick = {
                 sharedPrefsManager.storeApiKey(apiKey)
-//                onApiKeyEntered()
+                onApiKeyEntered()
             }) {
                 Text(text = "Save API Key")
             }

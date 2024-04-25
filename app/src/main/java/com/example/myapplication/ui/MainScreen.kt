@@ -27,7 +27,7 @@ fun MainScreen(sharedPrefsManager: SharedPrefsManager, navController: NavControl
 
     if (apiKey == null || apiKey == "apikey") {
         InputApiKeyScreen(context = context, sharedPrefsManager = sharedPrefsManager) {
-            navController.navigate("camera_screen_route") // Navigate to CameraScreen
+            navController.navigate("camera_screen_route")
         }
     } else {
         MainContent(
